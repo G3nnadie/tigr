@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Default</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <!-- Fonts END -->
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="wrapper fx-column">
+    
+    <!-- Header -->
+
+    <header class="header">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <!-- Logo -->
+
+        <a href="index.html" class="logo"><img src="img/logo.png" alt="Tiger SMS"></a>
+
+        <!-- Nav -->
+
+        <nav class="nav">
+          <ul class="nav__list d-flex align-items-center flex-wrap">
+            <li class="nav__item"><a href="#" class="nav__link">Telegram Bot
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 24C18.6274 24 24 18.6274 24 12C24 5.37258 18.6274 0 12 0C5.37258 0 0 5.37258 0 12C0 18.6274 5.37258 24 12 24Z" fill="white"/>
+                <path d="M17.3677 6.86481C17.4773 6.15059 16.8039 5.58685 16.1741 5.86568L3.63133 11.4189C3.17973 11.6189 3.21277 12.3087 3.68115 12.4591L6.26775 13.2898C6.76148 13.4483 7.29601 13.3663 7.72714 13.0659L13.5589 9.00309C13.7348 8.88055 13.9264 9.13272 13.7762 9.28887L9.57835 13.6532C9.17114 14.0766 9.25195 14.794 9.74181 15.1038L14.4417 18.0758C14.9689 18.4091 15.647 18.0743 15.7456 17.4319L17.3677 6.86481Z" fill="#BE0000"/>
+              </svg>
+            </a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Как это работает?</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">API</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Бесплатные номера</a></li>
+          </ul>
+        </nav>
+
+        <!-- Log -->
+
+        <div class="log d-flex">
+          <a href="#" class="log__item flex-center">Вход</a>
+          <a href="#" class="log__item flex-center">Регистрация</a>
+        </div>
+
+        <!-- Lang -->
+
+        <div class="lang">
+          <div class="lang__current">
+            <svg viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.5 29C6.525 29 0 22.475 0 14.5C0 6.525 6.525 0 14.5 0C22.475 0 29 6.525 29 14.5C29 22.475 22.475 29 14.5 29ZM11.4792 20.5417C12.2042 24.2875 13.5333 26.5833 14.5 26.5833C15.4667 26.5833 16.7958 24.2875 17.5208 20.5417H11.4792ZM20.0583 20.5417C19.6958 22.5958 19.0917 24.5292 18.3667 25.9792C21.1458 25.0125 23.5625 23.0792 25.0125 20.5417H20.0583ZM3.9875 20.5417C5.4375 23.0792 7.85417 25.0125 10.6333 25.9792C9.90833 24.5292 9.30417 22.5958 8.94167 20.5417H3.9875ZM20.4208 18.125H26.1C26.3417 17.0375 26.5833 15.7083 26.5833 14.5C26.5833 13.2917 26.3417 11.9625 25.9792 10.875H20.3C20.5417 12.0833 20.5417 13.2917 20.5417 14.5C20.5417 15.7083 20.5417 16.9167 20.4208 18.125ZM11.1167 18.125H18.0042C18.125 17.0375 18.2458 15.8292 18.2458 14.5C18.2458 13.1708 18.125 11.9625 18.0042 10.875H11.1167C10.9958 11.9625 10.875 13.1708 10.875 14.5C10.875 15.8292 10.9958 17.0375 11.1167 18.125ZM3.02083 18.125H8.7C8.57917 16.9167 8.57917 15.7083 8.57917 14.5C8.57917 13.2917 8.57917 12.0833 8.7 10.875H3.02083C2.65833 11.9625 2.41667 13.2917 2.41667 14.5C2.41667 15.7083 2.65833 17.0375 3.02083 18.125ZM20.0583 8.45833H25.0125C23.5625 5.92083 21.1458 3.9875 18.3667 3.02083C19.0917 4.47083 19.6958 6.40417 20.0583 8.45833ZM11.4792 8.45833H17.6417C16.9167 4.7125 15.5875 2.41667 14.6208 2.41667C13.6542 2.41667 12.2042 4.7125 11.4792 8.45833ZM3.9875 8.45833H8.94167C9.30417 6.40417 9.90833 4.47083 10.6333 3.02083C7.85417 3.9875 5.55833 5.92083 3.9875 8.45833Z"/>
+            </svg>
+            <span>RU</span>
+            <i class="lang__arrow"></i>
+          </div>
+          <div class="lang__box">
+            <ul class="lang__list">
+              <li class="lang__item"><a href="#">EN</a></li>
+              <li class="lang__item"><a href="#">CH</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      </div>
+    </header>
+
+    <!-- Main -->
+    
+    <main class="main">
+      
+      <!-- Intro -->
+
+      <div class="intro">
+        <div class="container">
+
+          <!-- Sl -->
+
+          <div class="swiper-container intro__sl">
+            <div class="swiper-wrapper">
+
+              <!-- Item -->
+
+              <div class="swiper-slide">
+                <div class="intro__logo"><img src="img/svg/tiger-sms.svg" alt="Img"></div>
+                <p class="intro__title">Купить виртуальный номер для смс по низкой цене</p>
+                <div class="paragraph">
+                  <p>Экономьте на регистрацию во всех сервисах планеты. Получите временный номер телефона для смс и создавайте аккаунты на нужной площадке по самой выгодной цене.</p>
+                </div>
+                <div class="intro__btn fx"><a href="#" class="btn btn--dark flex-center">Попробовать</a></div>
+              </div>
+
+              <!-- Item -->
+
+              <div class="swiper-slide">
+                <div class="intro__logo"><img src="img/svg/tiger-sms.svg" alt="Img"></div>
+                <p class="intro__title">Получи смс на виртуальный номер из любой точки мира</p>
+                <div class="paragraph">
+                  <p>Множество способов оплаты даёт возможность пользоваться сервисом смс активации из любой страны в мире</p>
+                </div>
+                <div class="intro__btn fx"><a href="#" class="btn btn--dark flex-center">Попробовать</a></div>
+              </div>
+
+              <!-- Item -->
+
+              <div class="swiper-slide">
+                <div class="intro__logo"><img src="img/svg/tiger-sms.svg" alt="Img"></div>
+                <p class="intro__title">Полная анонимность</p>
+                <div class="paragraph">
+                  <p>Для покупки виртуального номера не требуется вводить никаких личных данных. Достаточно пройти регистрацию по электронной почте.</p>
+                </div>
+                <div class="intro__btn fx"><a href="#" class="btn btn--dark flex-center">Попробовать</a></div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Dats -->
+
+          <div class="swiper-pagination swiper-pagination--intro flex-center"></div>
+
+          <!-- Img -->
+
+          <div class="intro__img"><img src="img/other/tiger.png" alt="Img"></div>
+          
+        </div>
+      </div>
+
+      <!-- Activation -->
+
+      <section class="activation">
+        <div class="container">
+
+          <!-- Title -->
+
+          <div class="title text-center">
+            <h1>Аренда номера</h1>
+          </div>
+
+          <!-- Switch -->
+
+          <div class="activation__switch flex-center">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="switch__sl speed"></span>
+            </label>
+          </div>
+
+          <!-- Row -->
+
+          <div class="row activation__row">
+            <div class="col-4">
+              <div class="activation__inner activation__inner--service border">
+                <p class="activation__title text-center">Выберите сервис</p>
+                <form action="#" class="search">
+                  <input type="text" placeholder="Поиск">
+                  <button class="search__btn"></button>
+                </form>
+                <ul class="activation__list activation__list--button scrollbar-style">
+                  <li class="activation__item activation__item--active">
+                    <button><i class="activation__icon" style="background: url(img/service/1.svg) center/contain no-repeat;"></i>Spotify</button>
+                  </li>
+                  <li class="activation__item">
+                    <button><i class="activation__icon" style="background: url(img/service/1.svg) center/contain no-repeat;"></i>Spotify</button>
+                  </li>
+                  <li class="activation__item">
+                    <button><i class="activation__icon" style="background: url(img/service/1.svg) center/contain no-repeat;"></i>Spotify</button>
+                  </li>
+                  <li class="activation__item">
+                    <button><i class="activation__icon" style="background: url(img/service/1.svg) center/contain no-repeat;"></i>Spotify</button>
+                  </li>
+                  <li class="activation__item">
+                    <button><i class="activation__icon" style="background: url(img/service/1.svg) center/contain no-repeat;"></i>Spotify</button>
+                  </li>
+                  <li class="activation__item">
+                    <button><i class="activation__icon" style="background: url(img/service/1.svg) center/contain no-repeat;"></i>Spotify</button>
+                  </li>
+                  <li class="activation__item">
+                    <button><i class="activation__icon" style="background: url(img/service/1.svg) center/contain no-repeat;"></i>Spotify</button>
+                  </li>
+                  <li class="activation__item">
+                    <button><i class="activation__icon" style="background: url(img/service/1.svg) center/contain no-repeat;"></i>Spotify</button>
+                  </li>
+                  <li class="activation__item">
+                    <button><i class="activation__icon" style="background: url(img/service/1.svg) center/contain no-repeat;"></i>Spotify</button>
+                  </li>
+                  <li class="activation__item">
+                    <button><i class="activation__icon" style="background: url(img/service/1.svg) center/contain no-repeat;"></i>Spotify</button>
+                  </li>
+                  <li class="activation__item">
+                    <button><i class="activation__icon" style="background: url(img/service/1.svg) center/contain no-repeat;"></i>Spotify</button>
+                  </li>
+                  <li class="activation__item">
+                    <button><i class="activation__icon" style="background: url(img/service/1.svg) center/contain no-repeat;"></i>Spotify</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="activation__inner activation__inner--country border">
+                <p class="activation__title text-center">Выберите страну</p>
+                <form action="#" class="search">
+                  <input type="text" placeholder="Поиск">
+                  <button class="search__btn"></button>
+                </form>
+                <ul class="activation__list scrollbar-style">
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>ЮЖНАЯ АФРИКА (ZA)</a>
+                  </li>
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>ЮЖНАЯ АФРИКА (ZA)</a>
+                  </li>
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>ЮЖНАЯ АФРИКА (ZA)</a>
+                  </li>
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>ИНДИЯ (IN)</a>
+                  </li>
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>ИНДИЯ (IN)</a>
+                  </li>
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>ИНДИЯ (IN)</a>
+                  </li>
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>ПАКИСТАН (PK)</a>
+                  </li>
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>ПАКИСТАН (PK)</a>
+                  </li>
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>ПАКИСТАН (PK)</a>
+                  </li>
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>Бангладеш(BD)</a>
+                  </li>
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>Бангладеш(BD)</a>
+                  </li>
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>Бангладеш(BD)</a>
+                  </li>
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>Замбия (ZM)</a>
+                  </li>
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>Замбия (ZM)</a>
+                  </li>
+                  <li class="activation__item">
+                    <a href="#"><i class="activation__icon" style="background: url(img/country/1.svg) center/contain no-repeat;"></i>Замбия (ZM)</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Btn -->
+
+          <div class="row activation__btn">
+            <div class="col-4"><div class="btn-box flex-center"><a href="#" class="btn btn--dark flex-center">Добавить сервис</a></div></div>
+          </div>
+          
+        </div>  
+      </section>
+
+      <!-- Step -->
+
+      <section class="step">
+        <div class="container">
+
+          <!-- Title -->
+
+          <div class="title title--bg title--mb text-center">
+            <h2>Как это работает?</h2>
+          </div>
+
+          <!-- Row -->
+
+          <div class="row">
+            
+            <!-- Col -->
+
+            <div class="col-4">
+              <div class="step__item step__item--1">
+                <p class="step__title">1ШАГ</p>
+                <p class="step__txt">Зарегистрируйте учетную запись на нашем сайте</p>
+                <i class="step__img" style="background: url(img/svg/step-1.svg) center 95% no-repeat;"></i>
+              </div>
+            </div>
+
+            <!-- Col -->
+
+            <div class="col-4">
+              <div class="step__item step__item--2">
+                <p class="step__title">2ШАГ</p>
+                <p class="step__txt">Пополните баланс на своём аккаунте</p>
+                <i class="step__img" style="background: url(img/svg/step-2.svg) center 100% no-repeat;"></i>
+              </div>
+            </div>
+
+            <!-- Col -->
+
+            <div class="col-4">
+              <div class="step__item step__item--3">
+                <p class="step__title">3ШАГ</p>
+                <p class="step__txt">Получите СМС от нужного серсива</p>
+                <i class="step__img" style="background: url(img/svg/step-3.svg) center 93% no-repeat;"></i>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- Vantage -->
+
+      <section class="vantage">
+        <div class="container">
+          
+          <!-- Title -->
+
+          <div class="title title--bg title--mb text-center">
+            <h2>Преимущества нашего сервиса</h2>
+          </div>
+
+          <!-- Row -->
+
+          <div class="row">
+            
+            <!-- Col -->
+
+            <div class="col-6">
+              <div class="vantage__item">
+                <span class="vantage__num flex-center">1</span>
+                <p class="vantage__txt">Подробная статистика всех ваших покупок</p>
+              </div>
+            </div>
+
+            <!-- Col -->
+
+            <div class="col-6">
+              <div class="vantage__item">
+                <span class="vantage__num flex-center">4</span>
+                <p class="vantage__txt">Быстрое и автоматическое получение смс на виртуальный номер</p>
+              </div>
+            </div>
+
+            <!-- Col -->
+
+            <div class="col-6">
+              <div class="vantage__item">
+                <span class="vantage__num flex-center">2</span>
+                <p class="vantage__txt">Более 100 000 онлайн-номеров со всего мира</p>
+              </div>
+            </div>
+
+            <!-- Col -->
+
+            <div class="col-6">
+              <div class="vantage__item">
+                <span class="vantage__num flex-center">5</span>
+                <p class="vantage__txt">Оплата только за полученные SMS или мы вернем ваши деньги</p>
+              </div>
+            </div>
+
+            <!-- Col -->
+
+            <div class="col-6">
+              <div class="vantage__item">
+                <span class="vantage__num flex-center">3</span>
+                <p class="vantage__txt">Программа лояльности для тех, кто готов совершать регулярные покупки</p>
+              </div>
+            </div>
+
+            <!-- Col -->
+
+            <div class="col-6">
+              <div class="vantage__item">
+                <span class="vantage__num flex-center">6</span>
+                <p class="vantage__txt">Минимальная комиссия при пополнении счета</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- About -->
+
+      <section class="about">
+        <div class="container">
+          
+          <!-- Title -->
+
+          <div class="title title--bg title--mb text-center">
+            <h2>О нашем сервисе</h2>
+          </div>
+
+          <!-- Box -->
+
+          <div class="about__box">
+            <div class="about__head">
+              <div class="title">
+                <h3>Купить временный номер для смс</h3>
+              </div>
+              <div class="paragraph">
+                <p>Срочно нужен виртуальный номер для регистрации?? Сервис «Tiger SMS» предлагает своим клиентам самый широкий выбор поддерживаемых площадок. Где бы вам ни понадобилась регистрация, наши виртуальные номера для приема смс всегда помогут вам достичь желаемого.</p>
+              </div>
+              <div class="about__more"><a href="#" class="about__moreBtn">УЗНАТЬ БОЛЬШЕ<i class="speed"></i></a></div>
+              <i class="about__img"></i>
+            </div>
+            <div class="about__body">
+              <div class="paragraph">
+                <p>Главное преимущество нашего сервиса – соотношение качество/цена предлагаемых услуг самое высокое на рынке. Вы можете купить виртуальный номер телефона по цене от 5 рублей и гарантированно получаете входящее сообщение с кодом верификации от выбранной площадки.</p>
+                <p>А самое главное, что получить смс на виртуальный номер у нас можно в течение 1-2 минут. Как если бы использовали реальный номер телефона для регистрации. Это возможно благодаря использованию современных информационных технологий, на базе которых построен удобный и интуитивно-понятный интерфейс «Tiger SMS».</p>
+                <p>Ну а если возникнут какие-либо сложности с работой нашего сервиса смс-активаций, к вам на помощь всегда придет профессиональная служба поддержки, которая у нас работой в режиме 24/7.</p>
+                <h3>Онлайн номера для приема смс от «Tiger SMS»</h3>
+                <p>Сегодня большинство интернет-площадок (от социальных сетей и мессенджеров до маркетплейсов и онлайн-кинотеатров) открывают свой функционал лишь зарегистрированным пользователям. И в таком случае часто нельзя обойтись без фейкового номера для регистрации. Нерационально каждый раз покупать новый стартовый пакет для создания очередного аккаунта в Instagram для продвижения бизнеса.</p>
+                <p>Кроме того, что реальная сим-карта дороже, чем разовый виртуальный номер телефона для смс, а ее покупка часто сопряжена с предоставлением личной информации. А далеко не каждый считает это разумным шагом.</p>
+                <p>Для ситуаций, когда необходимо быстро, недорого и анонимно выполнить регистрацию в Интернете и создан сервис «Tiger SMS». Потратив несколько мгновений и пару рублей, вы легко создадите аккаунт где угодно. Купив временный номер у нас, вы получаете возможность регистрации на следующих площадках:</p>
+                <ul>
+                  <li>Telegram</li>
+                  <li>YouTube</li>
+                  <li>Gmail</li>
+                  <li>FB</li>
+                  <li>Instagram</li>
+                  <li>TikTok</li>
+                  <li>Discord</li>
+                  <li>Line</li>
+                  <li>KakaoTalk</li>
+                  <li>Tinder</li>
+                  <li>Nike</li>
+                  <li>Naver</li>
+                </ul>
+                <p>А также на еще 200+ популярных сервисах со всей планеты. Причем регистрации возможна на номера практически всех стран мира. Да, номера для приема смс – просто панацея, если надо создать профиль на забаненной в вашей стране площадке. Согласитесь, 5-20 рублей – небольшая цена за беспрепятственную регистрацию.</p>
+                <h3>Купить виртуальный номер для регистрации на любой площадке</h3>
+                <p>Описанные возможности «Tiger SMS» и те преимущества, которые наш сервис предлагает своим клиентам, возможны благодаря тому, что у нас вы всегда найдете требуемый вам разовый номер телефона для смс. Наши специалисты пристально следят за тем, чтобы в наличии всегда были номера для всех актуальных площадок. Причем в достаточном для любого пользователя количестве. Если у нас вы не нашли нужный номер от какого-либо Интернет-сервиса, значит его просто не существует в природе.</p>
+                <p>А если существует – смело ищете его в нашем перечне. К какой стране вам бы ни понадобилась привязка аккаунта – с нашей помощью вы пройдете смс-активацию где угодно. Даже с другого континента.</p>
+                <p>Постоянное наличие виртуальных номеров для получения смс по низким ценам – отличительная черта «Tiger SMS», которая позволила нашему сервиса быстро завоевать доверие клиентов по всему миру!</p>
+                <h3>Получить смс на виртуальный номер от 5-ти рублей</h3>
+                <p>Если в какой-то момент вам понадобится неотлагательная регистрация, где бы то ни было, купите виртуальный номер для приема смс у нас и получите обязательный набор преимуществ для наших клиентов, а именно:</p>
+                <ul>
+                  <li>Низкие цены на любую смс-активацию;</li>
+                  <li>Гарантию качества (если вы не получите код, вам предложат другой номер). Мы не продаем наши номера дважды. Кроме того, наши номера не находятся в списках на автоматический бан, которые существуют на многих площадках;</li>
+                  <li>Высокую скорость работы сервиса. Пара кликов мышью – и номера для приема смс ваш;</li>
+                  <li>Всегда в наличии номера операторов 260+ стран для регистрации в 200+ интренет-сервисах;</li>
+                  <li>Разнообразные способы оплаты. Для вашего удобства мы принимаем банковские карты, электронные деньги популярных платежных систем и даже криптовалюту;</li>
+                  <li>Все возникающие проблемы решаются очень быстро профессиональной техподдержкой. Но подобные ситуации возникают редко, поскольку весь процесс работы генератора номеров для смс отлажен до совершенства;</li>
+                </ul>
+                <p>Полную анонимность процесса покупки номера и, как следствие анонимность процесса регистрации в Интернете. Чтобы получить доступ к нашим услугам от вас понадобится лишь адрес электронной почты, который не будет слит спамерам. А еще мы постоянно совершенствуем наш сервис смс-активаций, ориентируясь на отзывы клиентов. Обратная связь позволяет «Tiger SMS» успешно поддерживать работу лучшего на рынке генератора номеров для смс.</p>
+                <h3>Получение смс через API</h3>
+                <p>Важная информация для бизнеса: деловым людям не всегда удобно покупать разовый виртуальный номер для получения смс вручную. Именно поэтому «Tiger SMS» предлагает своим клиентам технологии получение смс через API.</p>
+                <p>Для максимально эффективного продвижения вашего бизнеса наши специалисты помогут вам настроить массовую смс-активацию в автоматическом режиме и вести ваши дела с максимальной отдачей.</p>
+                <p>Бизнесмен вы или рядовой пользователь Интернета в ситуациях, когда необходима запланированная или срочная регистрация в Сети, смело обращайтесь за виртуальными номерами телефона для смс к «Tiger SMS». Берегите ваши деньги, время и анонимность!</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Faq -->
+
+      <section class="faq">
+        <div class="container">
+          
+          <!-- Title -->
+
+          <div class="title title--mb">
+            <h2>Как воспользоваться услугой SMS-активации: ответы на вопросы</h2>
+          </div>
+
+          <!-- Accordion -->
+
+          <ul class="accordion">
+            <li>
+              <div class="accordion-header speed">Насколько быстро я получу смс?<i></i></div>
+              <div class="accordion-body">
+                <p>Получение смс и регистрации по виртуальному номеру занимает столько же времени, как и при использовании обычной сим-карты. Если вам долго не приходит смс с проверочным кодом, то можно отказаться от приобретенного номера, нажав на кнопку Отмена. Средства моментально вернуться на ваш счет. Если вы используете номер страны, в которой в данный момент не находитесь, рекомендуется использование VPN, так как большинство сервисов сопоставляет страну мобильного оператора и реальное местоположение пользователя.</p>
+              </div>
+            </li>
+            <li>
+              <div class="accordion-header speed">Сколько сообщений я могу принять на 1 виртуальный номер?<i></i></div>
+              <div class="accordion-body">
+                <p>На один виртуальный номер можно принять 1 смс от определенного сервиса, выбранного при покупке.</p>
+              </div>
+            </li>
+            <li>
+              <div class="accordion-header speed">Какие способы пополнения баланса поддерживает сервис?<i></i></div>
+              <div class="accordion-body">
+                <p>Со всеми способами пополнения счета можно ознакомиться на данной странице.</p>
+              </div>
+            </li>
+            <li>
+              <div class="accordion-header speed">Если на сайте нет нужного сервиса для смс-активации?<i></i></div>
+              <div class="accordion-body">
+                <p>Попробуйте сменить страну мобильного оператора, так как возможно нет номеров по выбранной вами стране. Если данное действие не принесло результата, обратитесь в службу поддержки нашего сайта.</p>
+              </div>
+            </li>
+            <li>
+              <div class="accordion-header speed">Почему по выборному мною сервису нет доступных номеров?<i></i></div>
+              <div class="accordion-body">
+                <p>Количество виртуальных номеров для каждого сервиса ограничено, и их наличие напрямую зависит от спроса клиентов на данный момент. Если номера для нужного сервиса нет в наличии, то необходимо немного подождать, и мы обязательно добавим новые.</p>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- Blog -->
+
+      <section class="blog">
+        <div class="container">
+          
+          <!-- Title -->
+
+          <div class="title title--bg title--mb text-center">
+            <h2>Блог</h2>
+          </div>
+
+          <!-- Sl -->
+
+          <div class="blog__slider">
+            <div class="swiper-container blog__sl">
+              <div class="swiper-wrapper">
+
+                <!-- Item -->
+
+                <div class="swiper-slide blog__item">
+                  <a href="#" class="blog__img" style="background: url(img/other/blog.png) center/cover no-repeat;"></a>
+                  <p class="blog__txt"><a href="#">Купите виртуальный номер для верификации PayPal</a></p>
+                </div>
+
+                <!-- Item -->
+
+                <div class="swiper-slide blog__item">
+                  <a href="#" class="blog__img" style="background: url(img/other/blog.png) center/cover no-repeat;"></a>
+                  <p class="blog__txt"><a href="#">Купите виртуальный номер для верификации PayPal</a></p>
+                </div>
+
+                <!-- Item -->
+
+                <div class="swiper-slide blog__item">
+                  <a href="#" class="blog__img" style="background: url(img/other/blog.png) center/cover no-repeat;"></a>
+                  <p class="blog__txt"><a href="#">Купите виртуальный номер для верификации PayPal</a></p>
+                </div>
+
+                <!-- Item -->
+
+                <div class="swiper-slide blog__item">
+                  <a href="#" class="blog__img" style="background: url(img/other/blog.png) center/cover no-repeat;"></a>
+                  <p class="blog__txt"><a href="#">Купите виртуальный номер для верификации PayPal</a></p>
+                </div>
+
+              </div>
+            </div>
+            <button class="swiper-button-arrow swiper-button-next1 flex-center">
+              <svg viewBox="0 0 44 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M41.5 26.8673C42.8333 26.0975 42.8333 24.173 41.5 23.4032L4.5 2.04124C3.16667 1.27144 1.5 2.23369 1.5 3.77329L1.5 46.4972C1.5 48.0368 3.16667 48.9991 4.5 48.2293L41.5 26.8673Z" stroke="white" stroke-width="2"/>
+              </svg>
+            </button>
+            <button class="swiper-button-arrow swiper-button-prev1 flex-center">
+              <svg viewBox="0 0 44 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 26.8673C1.16667 26.0975 1.16667 24.173 2.5 23.4032L39.5 2.04124C40.8333 1.27144 42.5 2.23369 42.5 3.77329L42.5 46.4972C42.5 48.0368 40.8333 48.9991 39.5 48.2293L2.5 26.8673Z" stroke="white" stroke-width="2"/>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="container d-flex align-items-center justify-content-between">
+
+        <!-- Logo -->
+
+        <a href="#" class="footer__logo"><img src="img/logo.png" alt="Logo"></a>
+
+        <!-- Nav -->
+
+        <nav class="footer__nav d-flex justify-content-between">
+          <ul>
+            <li><a href="#">Способ оплаты</a></li>
+            <li><a href="#">API документация </a></li>
+          </ul>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Блог</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Обратная связь</a></li>
+          </ul>
+        </nav>
+
+        <!-- Info -->
+
+        <div class="info">
+          <div class="info__head d-flex justify-content-between">
+            <div class="social d-flex">
+              <a href="#" class="social__item" style="background: url(img/svg/i-mail.svg) center no-repeat;"></a>
+              <a href="#" class="social__item" style="background: url(img/svg/i-in.svg) center no-repeat;"></a>
+              <a href="#" class="social__item" style="background: url(img/svg/i-tg.svg) center no-repeat;"></a>
+            </div>
+            <div class="pay d-flex">
+              <i class="pay__item" style="background: url(img/svg/i-pay-1.svg) center no-repeat;"></i>
+              <i class="pay__item" style="background: url(img/svg/i-pay-2.svg) center no-repeat;"></i>
+              <i class="pay__item" style="background: url(img/svg/i-pay-3.svg) center no-repeat;"></i>
+              <i class="pay__item" style="background: url(img/svg/i-pay-4.svg) center no-repeat;"></i>
+            </div>
+          </div>
+          <div class="info__bott d-flex">
+            <p><a href="#">Публичная оферта</a></p>
+            <p><a href="#">Политика в отношении персональных данных и файлов cookie</a></p>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+
+  </div>
+
+  <!--[if lt IE 9]>
+  <script src="libs/html5shiv/es5-shim.min.js"></script>
+  <script src="libs/html5shiv/html5shiv.min.js"></script>
+  <script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+  <script src="libs/respond/respond.min.js"></script>
+  <![endif]-->
+  <script src="libs/jquery/jquery-3.4.0.min.js"></script>
+  <script src="libs/swiper/swiper.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+  <!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
