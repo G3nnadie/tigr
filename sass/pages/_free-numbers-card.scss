@@ -1,0 +1,52 @@
+// Free-numbers card
+.free-numbers-card {
+  &__box {
+    padding: 40px;
+    margin: 0 auto;
+    line-height: 1;
+    font-size: $fz-40;
+    text-align: center;
+    border-radius: $radius-20;
+    max-width: 840px;width: 100%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
+    @include bl-size(190px, 190px);
+  }
+  &__country {
+    margin-top: 20px;
+  }
+  &__num {
+    margin-top: 30px;
+  }
+  &__btns {
+    margin-top: 40px;
+    .btn {
+      width: auto;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .free-numbers-card {
+    &__box {
+      font-size: $fz-24;
+      max-width: 640px;
+    }
+    &__img {
+      @include bl-size(100px, 100px);
+    }
+    &__country {
+      margin-top: 15px;
+    }
+    &__num {
+      margin-top: 20px;
+    }
+  }
+}

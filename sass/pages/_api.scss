@@ -1,0 +1,135 @@
+// Api
+.api {
+  &__nav {
+    padding-right: 8px;
+    li:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    a {
+      height: 48px;
+      color: $dark;
+      font-size: $fz-13;
+      padding: 8px 17px;
+      font-weight: $medium;
+      border-radius: $radius-20;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+      display: flex;
+      align-items: center;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+  .title {
+    max-width: 595px;width: 100%;
+  }
+  &__img {
+    margin-top: 40px;
+    pointer-events: none;
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  .title-midd {
+    margin-top: 40px;
+    font-weight: $semibold;
+  }
+  .paragraph {
+    margin-top: 40px;
+  }
+  .accordion {
+    margin-top: 100px;
+    .accordion-header {
+      padding: 0 100px 0 40px;
+      i {
+        right: 35px;
+        @include bl-size(30px, 26px);
+      }
+    }
+    .accordion-body {
+      padding: 10px 40px 30px;
+    }
+  }
+  &__head {
+    color: $white;
+    background: $dark;
+    padding: 29px 22px;
+    word-break: break-all;
+    border-radius: $radius-20;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.08);
+    span {
+      color: $red;
+    }
+  }
+  &__body {
+    strong {
+      display: block;
+      margin-top: 40px;
+      font-weight: $semibold;
+    }
+    p {
+      margin-top: 20px;
+      span {
+        color: $red;
+      }
+      a {
+        color: $dark;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__step {
+    margin-top: 40px;
+    padding: 45px 64px;
+    border-radius: $radius-50;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+    ul {
+      li {
+        b {
+          font-weight: $semibold;
+        }
+        &:not(:last-child) {
+          margin-bottom: 25px;
+        }
+      }
+    }
+    &--big {
+      font-size: $fz-30;
+      ul {
+        li:not(:last-child) {
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .title-midd {
+      margin-top: 0;
+    }
+    .paragraph {
+      margin-bottom: 25px;
+    }
+  }
+  &__info {
+    margin-top: 40px;
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .api {
+    .accordion {
+      margin-top: 70px;
+      .accordion-header i {
+        @include bl-size(20px, 22px);
+      }
+    }
+    &__step {
+      &--big {
+        font-size: $fz-24;
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+// Form
+.form {
+  &__field,
+  &__field input,
+  &__field textarea {
+    width: 100%;
+    display: block;
+  }
+  &__field {
+    margin-bottom: 16px;
+    &--error {
+      position: relative;
+      input {
+        padding-right: 43px !important;
+      }
+      .form__error,
+      .form__errorText {
+        display: block !important;
+      }
+    }
+  }
+  &__field input,
+  &__field textarea {
+    border: 0;
+    color: $dark;
+    font-size: $fz-20;
+    background: $white;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: $regular;
+    border-radius: $radius-20;
+    font-family: $font-primary;
+    @include input-placeholder {
+      color: rgba(42, 42, 42, 0.5);
+    }
+  }
+  &__field input {
+    height: 56px;
+    line-height: 57px;
+  }
+  &__field textarea {
+    resize: none;
+    height: 450px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  &__error {
+    color: $red;
+    line-height: 1;
+    font-size: $fz-40;
+    position: absolute;
+    pointer-events: none;
+    top: 15px;right: 11px;
+    font-weight: $semibold;
+  }
+  &__errorText {
+    display: none;
+    margin-top: 17px;
+    font-size: $fz-10;
+    text-align: center;
+    font-weight: $semibold;
+  }
+  &__name {
+    top: 15px;
+    width: 200px;
+    position: relative;
+    padding-right: 20px;
+    font-weight: $semibold;
+    flex-shrink: 0;
+  }
+  &__field {
+    &--shadow {
+      input, textarea {
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
+      }
+    }
+    &--name {
+      display: flex;
+      align-items: flex-start;
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .form {
+    &__field input,
+    &__field textarea {
+      font-size: $fz-16;
+    }
+    &__field input {
+      height: 50px;
+      line-height: 51px;
+    }
+    &__field textarea {
+      height: 250px;
+    }
+    &__error {
+      font-size: $fz-30;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+// Buy
+.buy {
+  &__head {
+    margin-bottom: 40px;
+    .switch {
+      margin-left: 20px;
+      @include bl-size(85px, 48px);
+      &__sl {
+        &:before {
+          @include bl-size(48px, 48px);
+        }
+      }
+      input:checked+.switch__sl:before {
+        transform: translateX(37px);
+      }
+    }
+  }
+  &__btn {
+    margin-top: 20px;
+    .btn {
+      width: auto;
+    }
+  }
+}

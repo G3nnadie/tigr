@@ -1,0 +1,38 @@
+// Article
+.article {
+  &__wrap {
+    padding-right: 30px;
+  }
+  &__body {
+    padding-top: 80px;
+    img, p {
+      margin-top: 40px;
+    }
+    img {
+      width: 100%;
+      display: block;
+    }
+    h2 {
+      line-height: 1.1;
+      margin-top: 50px;
+    }
+    p {
+      line-height: 1.45;
+      strong {
+        font-weight: $semibold;
+      }
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .article {
+    &__wrap {
+      padding-right: 0;
+    }
+    &__body {
+      padding-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+// Lang
+.lang {
+  z-index: 3;
+  color: $white;
+  position: relative;
+  &__current {
+    cursor: pointer;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    svg {
+      fill: $white-light;
+      @include bl-size(29px, 29px);
+      margin-right: 5px;
+      flex-shrink: 0;
+    }
+  }
+  &__arrow {
+    @include bl-size(12px, 10px);
+    position: absolute;
+    top: 50%;right: 0;
+    background: url(../img/svg/lang-arrow.svg) center/contain no-repeat;
+    transform: translateY(-50%);
+  }
+  &__box {
+    opacity: 0;
+    background: $red;
+    position: absolute;
+    top: -99em;left: 0;right: 0;
+    padding: 10px 10px 10px 34px;
+    transition: opacity .2s;
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+    a {
+      color: $white;
+      &:hover {
+        opacity: .7;
+      }
+    }
+  }
+  &:hover &__box {
+    top: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .lang {
+    margin-left: 40px;
+  }
+}

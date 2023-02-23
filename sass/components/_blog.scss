@@ -1,0 +1,42 @@
+// Blog
+.blog {
+  padding-top: 150px;
+  &__slider {
+    padding: 0 163px;
+    position: relative;
+    .swiper-button-arrow {
+      margin-top: -82px;
+    }
+  }
+  &__img {
+    display: block;
+    padding-bottom: 100%;
+    border-radius: $radius-20;
+  }
+  &__txt {
+    margin-top: 25px;
+    font-size: $fz-13;
+    font-weight: $bold;
+    line-height: 1.31;
+    text-align: center;
+    a {
+      color: $dark;
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .blog {
+    padding-top: 80px;
+    &__slider {
+      padding: 0 90px;
+      .swiper-button-arrow {
+        margin-top: -60px;
+      }
+    }
+  } 
+}

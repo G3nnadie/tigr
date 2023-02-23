@@ -1,0 +1,39 @@
+// Number history
+.number-history {
+  &__search {
+    p {
+      font-size: $fz-20;
+      font-weight: $semibold;
+    }
+    .search {
+      margin: 20px auto 0;
+      max-width: 290px;width: 100%;
+      input {
+        height: 42px;
+        font-size: $fz-20;
+      }
+    }
+  }
+  .table {
+    &__date {
+      margin-top: 20px;
+    }
+    &__rows {
+      max-height: 58%;
+    }
+    &__cell {
+      width: 25%;
+      img {
+        margin: 0 auto;
+        display: block;
+        @include bl-size(25px, 25px);
+      }
+      &--1 {
+        text-align: left;
+      }
+      &--4 {
+        width: 12%;
+      }
+    }
+  }
+}

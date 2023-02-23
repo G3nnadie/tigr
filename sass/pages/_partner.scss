@@ -1,0 +1,147 @@
+// Partner
+.partner {
+  .title-midd {
+    font-weight: $semibold;
+  }
+  &__title {
+    margin: 0 auto;
+    max-width: 530px;width: 100%;
+    .title-midd {
+      margin-top: 25px;
+    }
+  }
+  &__img {
+    margin-top: 35px;
+  }
+  &__link {
+    margin: 30px auto 0;
+    max-width: 440px;width: 100%;
+    &Box {
+      margin-top: 20px;
+      position: relative;
+    }
+  }
+  &__copy {
+    position: absolute;
+    top: 50%;right: -45px;
+    @include bl-size(35px, 34px);
+    background: url(../img/svg/i-copy.svg) center/contain no-repeat;
+    transform: translateY(-50%);
+    &:hover {
+      opacity: .7;
+    }
+  }
+  &__text {
+    margin-top: 80px;
+    max-width: 903px;width: 100%;
+    .title-midd {
+      color: $red;
+    }
+    .paragraph {
+      margin-top: 25px;
+      a {
+        color: $red;
+        margin-left: 10px;
+        text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__story {
+    margin-top: 60px;
+    position: relative;
+    .table {
+      height: auto;
+      padding: 25px 80px 20px;
+      &__rows {
+        > li {
+          padding-left: 25px;
+          padding-right: 25px;
+          &:not(:last-child) {
+            margin-bottom: 20px;
+          }
+        }
+      }
+      &__head {
+        padding-bottom: 25px;
+        border-bottom: 1px solid $black;
+      }
+      &__cell {
+        &--1 {
+          width: 20%;
+        }
+        &--2 {
+          width: 20%;
+        }
+        &--3 {
+          width: 20%;
+        }
+        &--4 {
+          width: 18%;
+        }
+        &--5 {
+          width: 10%;
+        }
+      }
+    }
+    .btn-box {
+      margin-top: 25px;
+    }
+    .btn {
+      width: auto;
+    }
+  }
+  &__more {
+    position: absolute;
+    right: 0;bottom: 45px;
+    a {
+      color: $red;
+      font-size: $fz-13;
+      text-decoration: underline;
+      a:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &__money {
+    margin-top: 85px;
+    .table {
+      margin: 25px auto 0;
+      max-width: 600px;width: 100%;
+      &__cell {
+        width: 33%;
+        &--1 {
+          text-align: left;
+        }
+        &--3 {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .partner {
+    &__story {
+      .table {
+        padding-left: 30px;
+        padding-right: 30px;
+        &__rows {
+          > li {
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+        &__cell {
+          &--1 {
+            width: 24%;
+          }
+        }
+      }
+    } 
+  }
+}

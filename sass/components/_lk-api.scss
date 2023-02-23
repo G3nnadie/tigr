@@ -1,0 +1,18 @@
+// Lk api
+.lk-api {
+  margin-top: 65px;
+  .title-midd {
+    color: $red;
+    font-weight: $medium;
+  }
+  &__txt {
+    margin-top: 55px;
+    font-size: $fz-13;
+  }
+  &__btn {
+    margin-top: 20px;
+    .btn {
+      width: auto;
+    }
+  }
+}

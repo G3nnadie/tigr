@@ -1,0 +1,72 @@
+// Panel
+.panel {
+  color: $white;
+  background: $dark;
+  padding: 20px 28px 30px;
+  border-radius: $radius-30;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08); 
+  &__icon {
+    display: block;
+    margin: 12px auto 0;
+    @include bl-size(100px, 100px);
+  }
+  &__sum {
+    margin-top: 12px;
+    font-size: $fz-25;
+    span {
+      font-weight: $semibold;
+    }
+  }
+  &__btn {
+    margin-top: 10px;
+    .btn {
+      width: auto;
+      height: 70px;
+      font-size: $fz-25;
+    }
+  }
+  &__nav {
+    padding: 0 18px;
+    margin-top: 20px;
+    &Item {
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+    &Link {
+      color: $white;
+      display: flex;
+      align-items: center;
+      &:hover,
+      &--active {
+        color: $red;
+      }
+    }
+    &Icon {
+      margin-right: 16px;
+      @include bl-size(29px, 29px);
+      flex-shrink: 0;
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .panel {
+    &__icon {
+      @include bl-size(80px, 80px);
+    }
+    &__sum {
+      font-size: $fz-22;
+    }
+    &__btn {
+      .btn {
+        height: 60px;
+        font-size: $fz-16;
+      }
+    }
+    &__nav {
+      padding: 0;
+    }
+  }
+}

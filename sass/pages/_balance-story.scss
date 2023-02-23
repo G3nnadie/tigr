@@ -1,0 +1,27 @@
+// Balance story
+.balance-story {
+  .table {
+    &__rows {
+      max-height: 85%;
+    }
+    &__cell {
+      width: 30%;
+      &--1,
+      &--4 {
+        width: 20%;
+      }
+      &--1 {
+        text-align: left;
+      }
+      &--4 {
+        text-align: right;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 80px;
+        max-height: 25px;
+      }
+    }
+  }
+}

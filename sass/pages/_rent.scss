@@ -1,0 +1,21 @@
+// Rent
+.rent {
+  &__story {
+    margin-top: 120px;
+  }
+  .table {
+    font-size: $fz-20;
+    &__cell {
+      width: 160px;
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .rent {
+    .table {
+      font-size: $fz-16;
+    }
+  }
+}

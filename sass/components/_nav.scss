@@ -1,0 +1,30 @@
+// Nav
+.nav {
+  &__item:not(:last-child) {
+    margin-right: 25px;
+  }
+  &__link {
+    color: $white;
+    display: flex;
+    align-items: center;
+    svg {
+      @include bl-size(24px, 24px);
+      margin-left: 10px;
+      flex-shrink: 0;
+    }
+    &:hover {
+      opacity: .7;
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .nav {
+    padding: 0 40px;
+    &__item {
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+  }
+}

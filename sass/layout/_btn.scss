@@ -1,0 +1,39 @@
+// Btn
+.btn {
+  padding: 0 32px;
+  font-weight: $bold;
+  width: 100%;height: 65px;
+  border-radius: $radius-20;
+  font-family: $font-primary;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+  &--small {
+    height: 30px;
+    padding: 0 15px;
+    font-weight: $medium;
+  }
+  &--dark {
+    color: $white;
+    background: $dark;
+    &:hover {
+      background: $dark-light;
+    }
+  }
+  &--red {
+    color: $white;
+    background: $red;
+    &:hover {
+      background: $red-dark;
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .btn {
+    height: 60px;
+    padding: 0 20px;
+    &--small {
+      height: 30px;
+    }
+  }
+}

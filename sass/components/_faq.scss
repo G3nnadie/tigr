@@ -1,0 +1,14 @@
+// Faq
+.faq {
+  padding-top: 150px;
+  .title {
+    max-width: 980px;width: 100%;
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .faq {
+    padding-top: 100px;
+  }
+}

@@ -1,0 +1,11 @@
+// Page-internal
+.page-internal {
+  padding-top: 100px;
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .page-internal {
+    padding-top: 70px;
+  }
+}

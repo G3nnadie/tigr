@@ -1,0 +1,23 @@
+// Filter
+.filter {
+  color: $red;
+  position: relative;
+  padding-right: 20px;
+  font-weight: $medium;
+  font-family: $font-primary;
+  i {
+    margin-top: 1px;
+    top: 50%;right: 0;
+    position: absolute;
+    @include bl-size(16px, 13px);
+    background: url(../img/svg/i-filter-down.svg) center/contain no-repeat;
+    transform: translateY(-50%);
+    transition: all .2s;
+  }
+  &--active {
+    i {
+      margin-top: 3px;
+      transform: translateY(-50%) rotate(59deg);
+    }
+  }
+}

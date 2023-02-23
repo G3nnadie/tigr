@@ -1,0 +1,12 @@
+// Faq
+.p-faq {
+  &__img {
+    img {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  .accordion {
+    margin-top: 80px;
+  }
+}

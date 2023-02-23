@@ -1,0 +1,23 @@
+// Notification
+.notification {
+  max-height: 400px;
+  margin-right: -40px;
+  padding-right: 24px;
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  &__date {
+    text-align: center;
+    font-size: $fz-10;
+  }
+  &__text {
+    padding: 20px;
+    margin-top: 10px;
+    font-size: $fz-13;
+    line-height: 1.31;
+    background: $white;
+    border-radius: $radius-10;
+  }
+}

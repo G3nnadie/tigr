@@ -1,0 +1,14 @@
+// Border
+.border {
+  padding: 25px 40px;
+  border: 2px solid $red;
+  border-radius: $radius-20;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .border {
+    padding: 25px 20px;
+  }
+}

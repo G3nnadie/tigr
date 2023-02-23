@@ -1,0 +1,79 @@
+// Table
+.table {
+  height: 445px;
+  font-size: $fz-13;
+  &__rows {
+    max-height: 100%;
+    margin-right: -30px;
+    padding-right: 30px;
+    > li:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  &__head,
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__head {
+    color: $red;
+  }
+  &__cell {
+    text-align: center;
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+  &__btn {
+    .btn {
+      padding: 0 10px;
+      font-size: $fz-13;
+      font-weight: $medium;
+      width: auto;height: 24px;
+    }
+  }
+  &__date {
+    margin-bottom: 40px;
+    &Item {
+      display: flex;
+      align-items: center;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      span {
+        color: $red;
+        margin-left: 10px;
+      }
+    }
+  }
+  &__status {
+    &--orange {
+      color: $orange;
+    }
+    &--red {
+      color: $red;
+    }
+    &--green {
+      color: $green;
+    }
+  }
+  &__num {
+    top: -1px;
+    margin-right: 5px;
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    @include bl-size(15px, 15px);
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .table {
+    &__rows {
+      margin-right: -15px;
+      padding-right: 15px;
+    }
+  }
+}

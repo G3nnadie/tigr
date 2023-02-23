@@ -1,0 +1,11 @@
+// Topping
+.topping {
+  margin-bottom: 100px;
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .topping {
+    margin-bottom: 70px;
+  }
+}

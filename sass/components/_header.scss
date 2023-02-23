@@ -1,0 +1,38 @@
+// Header
+.header {
+  background: $red;
+  font-size: $fz-13;
+  padding: 9px 0 16px;
+
+  z-index: 51;
+  position: fixed;
+  top: 0;left: 0;right: 0;
+}
+
+// Logo
+.logo {
+  max-width: 81px;width: 100%;
+  flex-shrink: 0;
+  img {
+    display: block;
+  }
+}
+
+// Log
+.log {
+  &__item {
+    height: 28px;
+    color: $white;
+    padding: 0 18px;
+    font-weight: $bold;
+    border-radius: $radius-30;
+    border: 1px solid $white;
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+    &:hover {
+      color: $red;
+      background: $white;
+    }
+  }
+}

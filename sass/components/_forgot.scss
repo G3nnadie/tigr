@@ -1,0 +1,12 @@
+// Forgot
+.forgot {
+  font-size: $fz-13;
+  font-weight: $regular;
+  a {
+    opacity: .5;
+    color: $white;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}

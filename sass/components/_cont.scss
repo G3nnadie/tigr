@@ -1,0 +1,13 @@
+// Cont
+.cont {
+  margin-top: 40px;
+  .title-midd {
+    margin-bottom: 20px;
+  }
+  .social__item {
+    @include bl-size(56px, 56px);
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+}

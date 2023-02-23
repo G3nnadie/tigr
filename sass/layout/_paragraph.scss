@@ -1,0 +1,12 @@
+// Paragraph
+.paragraph {
+  line-height: 1.45;
+  p+p {
+    margin-top: 35px;
+  }
+  &--mt-0 {
+    p+p {
+      margin-top: 0;
+    }
+  }
+}

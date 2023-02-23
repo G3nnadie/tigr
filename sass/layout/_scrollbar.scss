@@ -1,0 +1,7 @@
+// Scrollbar
+.scrollbar-style {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  @include scrollbars(16px, rgba(52, 40, 40, 0.25), rgba(255, 255, 255, 0));
+}

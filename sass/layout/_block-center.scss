@@ -1,0 +1,13 @@
+// Block center
+.block-center {
+  padding-top: 100px;
+  width: 100%;min-height: 100%;
+  @include flex-center;
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .block-center {
+    padding-top: 70px;
+  }
+}

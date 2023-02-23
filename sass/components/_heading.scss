@@ -1,0 +1,37 @@
+// Heading
+.heading {
+  margin-bottom: 80px;
+  &__icon {
+    margin-left: 20px;
+    @include bl-size(85px, 85px);
+    flex-shrink: 0;
+  }
+  .lang {
+    color: $dark;
+    &__current {
+      svg {
+        fill: $dark;
+      }
+    }
+    &__arrow {
+      background: url(../img/svg/lang-arrow-dark.svg) center/contain no-repeat;
+    }
+    &__box {
+      background: $white;
+    }
+    &__item {
+      a {
+        color: $dark;
+      }
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .heading {
+    &__icon {
+      @include bl-size(60px, 60px);
+    }
+  } 
+}

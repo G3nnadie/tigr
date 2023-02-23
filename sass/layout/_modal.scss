@@ -1,0 +1,76 @@
+// Modal
+.modal {
+  z-index: 99;
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, .41);
+  top: 0;left: 0;right: 0;bottom: 0;
+  &__box {
+    padding: 40px;
+    background: $white;
+    position: relative;
+    border-radius: $radius-20;
+    max-width: 840px;width: 96%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
+  }
+  &--red {
+    .modal__box {
+      background: $red;
+    }
+  }
+}
+
+.fullScreen {
+  padding: 50px 0;
+  min-height: 100%;
+}
+
+@media only screen and (max-width: $xl) {
+  .modal {
+    &__box {
+      max-width: 500px;
+    }
+  }
+}
+
+// MoreNum
+.moreNum {
+  color: $black;
+  margin: 0 auto;
+  line-height: 1;
+  font-size: $fz-30;
+  max-width: 484px;width: 100%;
+  .btn-box {
+    margin-top: 23px;
+    .btn {
+      width: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: $xl) {
+  .moreNum {
+    font-size: $fz-20;
+  }
+}
+
+// Rent
+.modal {
+  &--rent {
+    .modal__box {
+      max-width: 310px;
+      padding: 45px 50px 20px;
+    }
+  }
+}
+
+// Partner
+.modal {
+  &--partner {
+    .modal__box {
+      color: $white;
+      max-width: 600px;
+    }
+  }
+}

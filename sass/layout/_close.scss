@@ -1,0 +1,11 @@
+// Close
+.close {
+  opacity: .2;
+  position: absolute;
+  top: 15px;right: 15px;
+  @include bl-size(20px, 20px);
+  background: url(../img/svg/i-close.svg) center/contain no-repeat;
+  &:hover {
+    opacity: .4;
+  }
+}

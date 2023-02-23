@@ -1,0 +1,40 @@
+// Popular
+.popular {
+  margin-top: 50px;
+  padding: 35px 30px;
+  border-radius: $radius-20;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
+  &__item {
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  &__img {
+    display: block;
+    @include bl-size(100px, 95px);
+  }
+  &__name {
+    margin-top: 10px;
+    font-size: $fz-13;
+    a {
+      color: $red;
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+  &__view {
+    color: $red;
+    top: -8px;right: 0;
+    font-size: $fz-13;
+    position: absolute;
+    font-weight: $light;
+    display: flex;
+    align-items: center;
+    i {
+      @include bl-size(41px, 37px);
+      background: url(../img/svg/i-view-red.svg) center/contain no-repeat;
+    }
+  }
+}

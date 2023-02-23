@@ -1,0 +1,14 @@
+// Assistant
+.assistant {
+  margin-top: 55px;
+  font-weight: $semibold;
+  &__link {
+    margin-top: 7px;
+    a {
+      color: $dark;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

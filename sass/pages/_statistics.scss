@@ -1,0 +1,88 @@
+// Statistics
+.statistics {
+  .table__date {
+    justify-content: center;
+  }
+  .table {
+    font-size: $fz-12;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    .filter {
+      padding-right: 15px;
+      i {
+        @include bl-size(12px, 10px);
+      }
+    }
+    &__rows {
+      margin-right: -15px;
+      padding-right: 15px;
+    }
+    &__head {
+      align-items: flex-end;
+    }
+    &__cell {
+      .filter--active i {
+        margin-top: 2px;
+      }
+      img {
+        margin: 0 auto;
+        display: block;
+        @include bl-size(25px, 25px);
+      }
+      &--1 {
+        width: 10%;
+      }
+      &--2 {
+        width: 10%;
+      }
+      &--3 {
+        width: 20%;
+        .filter {
+          i {
+            margin-top: 10px;
+          }
+          &--active i {
+            margin-top: 11px;
+          }
+        }
+      }
+      &--4 {
+        width: 20%;
+      }
+      &--5 {
+        width: 20%;
+      }
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .statistics {
+    .table {
+      .filter i {
+        @include bl-size(9px, 8px);
+      }
+      &__head {
+        font-size: $fz-10;
+      }
+      &__cell {
+        &--3,
+        &--5 {
+          width: 22%;
+        }
+        &--3 {
+          .filter {
+            i {
+              margin-top: 8px;
+            }
+            &--active i {
+              margin-top: 9px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

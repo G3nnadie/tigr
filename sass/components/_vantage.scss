@@ -1,0 +1,33 @@
+// Vantage
+.vantage {
+  padding-top: 150px;
+  &__item {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+  &__num {
+    color: $white;
+    font-size: $fz-40;
+    background: $dark;
+    border-radius: 50%;
+    margin-right: 17px;
+    font-weight: $fw-black;
+    @include bl-size(82px, 82px);
+    flex-shrink: 0;
+  }
+  &__txt {
+    line-height: 1.25;
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .vantage {
+    padding-top: 100px;
+    &__num {
+      font-size: $fz-24;
+      @include bl-size(60px, 60px);
+    }
+  }
+}

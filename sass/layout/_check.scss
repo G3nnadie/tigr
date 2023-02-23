@@ -1,0 +1,45 @@
+// Check
+.check {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  input {
+    display: none;
+  }
+  &__mark {
+    position: relative;
+    margin-right: 15px;
+    border-radius: $radius-4;
+    border: 1px solid $white;
+    @include bl-size(21px, 21px);
+    flex-shrink: 0;
+    &:before {
+      opacity: 0;
+      @include pseudo-elements;
+      top: 0;left: 0;right: 0;bottom: 0;
+      background: url(../img/svg/i-check-white.svg) center/20px no-repeat;
+      transition: all .2s;
+    }
+  }
+  &__text {
+    font-size: $fz-13;
+    font-weight: $semibold;
+    a {
+      color: $dark;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  input:checked + &__mark:before {
+    opacity: 1;
+  }
+  &--dark {
+    .check__mark {
+      border-color: $black-light;
+      &:before {
+        background: url(../img/svg/i-check-dark.svg) center/20px no-repeat;
+      }
+    }
+  }
+}

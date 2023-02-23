@@ -1,0 +1,35 @@
+// Using
+.using {
+  margin-bottom: 20px;
+  &__title {
+    font-size: $fz-13;
+  }
+  &__group {
+    margin-top: 7px;
+  }
+  &__item {
+    @include bl-size(35px, 35px);
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+    &:hover {
+      opacity: .9;
+    }
+  }
+  &--big {
+    .using__item {
+      @include bl-size(56px, 56px);
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .using {
+    &--big {
+      .using__item {
+        @include bl-size(35px, 35px);
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+// Switch
+.switch {
+  position: relative;
+  display: inline-block;
+  @include bl-size(122px, 68px);
+  input {
+    display: none;
+  }
+  &__sl {
+    cursor: pointer;
+    position: absolute;
+    border-radius: $radius-50;
+    top: 0;left: 0;right: 0;bottom: 0;
+    background: $dark;
+    &:before {
+      top: 0;left: 0;
+      border-radius: 50%;
+      @include pseudo-elements;
+      @include bl-size(68px, 68px);
+      background: $red;
+      transition: inherit;
+    }
+  }
+  input:checked + .switch__sl {
+    background: $red;
+  }
+  input:checked + .switch__sl:before {
+    background: $dark;
+    transform: translateX(54px);
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .switch {
+    @include bl-size(80px, 42px);
+    &__sl {
+      &:before {
+        @include bl-size(42px, 42px);
+      }
+    }
+    input:checked + .switch__sl:before {
+      transform: translateX(38px);
+    }
+  }
+}

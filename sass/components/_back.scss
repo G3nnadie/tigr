@@ -1,0 +1,22 @@
+// Back
+.back {
+  i {
+    margin-right: 7px;
+    @include bl-size(60px, 60px);
+    background: url(../img/svg/i-back.svg) center/contain no-repeat;
+    flex-shrink: 0;
+    transition: inherit;
+  }
+  &:hover i {
+    opacity: .7;
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .back {
+    i {
+      @include bl-size(46px, 46px);
+    }
+  }
+}

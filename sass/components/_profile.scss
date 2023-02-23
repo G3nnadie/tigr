@@ -1,0 +1,11 @@
+// Profile
+.profile {
+  p {
+    span, b {
+      color: $red;
+    }
+  }
+  p+p {
+    margin-top: 20px;
+  }
+}

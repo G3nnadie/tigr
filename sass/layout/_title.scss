@@ -1,0 +1,54 @@
+// Title
+.title {
+  &--mb {
+    margin-bottom: 80px;
+  }
+  h1, h2 {
+    line-height: 1.12;
+  }
+  &--bg {
+    h2 {
+      color: $white;
+      background: $red;
+      padding: 10px 32px;
+      display: inline-block;
+      border-radius: $radius-50;
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+    }
+  }
+  &-midd {
+    font-size: $fz-30;
+    font-weight: $bold;
+    &--mb {
+      margin-bottom: 30px;
+    }
+  }
+  &--small {
+    h2 {
+      font-size: $fz-20;
+      padding: 4px 15px;
+      font-weight: $medium;
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  h1, h2 {
+    font-size: $fz-32;
+  }
+  h3 {
+    font-size: $fz-20;
+  }
+  .title {
+    &--mb {
+      margin-bottom: 50px;
+    }
+    &-midd {
+      font-size: $fz-24;
+      &--mb {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

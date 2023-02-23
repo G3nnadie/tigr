@@ -1,0 +1,62 @@
+// Arrow sl
+.swiper {
+  &-button {
+    &-arrow {
+      top: 50%;
+      background: $red;
+      position: absolute;
+      border-radius: 50%;
+      transform: translanteY(-50%);
+      @include bl-size(104px, 104px);
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.06);
+      &:after {
+        display: none;
+      }
+      svg {
+        position: relative;
+        @include bl-size(44px, 50px);
+      }
+      &:hover {
+        background: $red-dark;
+      }
+    }
+    &-next, &-next1 {
+      right: 0;
+      svg {
+        left: 5px;
+      }
+    }
+    &-prev, &-prev1 {
+      left: 0;
+      svg {
+        left: -5px;
+      }
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .swiper {
+    &-button {
+      &-arrow {
+        @include bl-size(60px, 60px);
+        svg {
+          @include bl-size(22px, 25px);
+        }
+      }
+      &-next, &-next1 {
+        right: 0;
+        svg {
+          left: 3px;
+        }
+      }
+      &-prev, &-prev1 {
+        left: 0;
+        svg {
+          left: -3px;
+        }
+      }
+    }
+  }
+}

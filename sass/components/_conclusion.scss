@@ -1,0 +1,24 @@
+// Conclusion
+.conclusion {
+  margin-top: 35px;
+  .title-midd {
+    font-weight: $semibold;
+  }
+  span {
+    font-size: $fz-40;
+    margin-left: 20px;
+    font-weight: $bold;
+  }
+  i {
+    top: 6px;
+    margin-left: 25px;
+    position: relative;
+    @include bl-size(100px, 88px);
+  }
+  .btn {
+    width: auto;
+    height: 55px;
+    padding: 0 16px;
+    margin-left: 25px;
+  }
+}

@@ -1,0 +1,22 @@
+// Dats
+.swiper-pagination {
+  left: 0;right: 0;
+  &-bullet  {
+    background: $white;
+    opacity: .5 !important;
+    margin: 0 3px !important;
+    @include bl-size(19px, 19px);
+    &-active {
+      opacity: 1 !important;
+    }
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .swiper-pagination {
+    &-bullet {
+      @include bl-size(14px, 14px);
+    }
+  }
+}

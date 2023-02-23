@@ -1,0 +1,21 @@
+// Form page
+.form-page {
+  &__form {
+    .form__field {
+      input {
+        margin: 0 auto;
+        max-width: 371px;width: 100%;
+      }
+    }
+    .btn-box {
+      margin-top: 20px;
+      .btn {
+        width: auto;
+      }
+    }
+    .check {
+      margin: 20px auto 0;
+      max-width: 330px;width: 100%;
+    }
+  }
+}

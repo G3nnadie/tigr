@@ -1,0 +1,49 @@
+// Flex-cener
+@mixin flex-center () {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Bl size
+@mixin bl-size ($width, $height) {
+  width:  $width;
+  height: $height;
+}
+
+// Placeholder color
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+// Pseudo-elements
+@mixin pseudo-elements {
+  content: " ";
+  position: absolute;
+}
+
+// Scrollbars
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  &::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: $foreground-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: $background-color;
+  }
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}

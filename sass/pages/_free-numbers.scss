@@ -1,0 +1,60 @@
+// Free-numbers
+.free-numbers {
+  .title {
+    max-width: 861px;width: 100%;
+  }
+  &__image {
+    margin-top: 70px;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .paragraph {
+    margin-top: 60px;
+    max-width: 758px;width: 100%;
+  }
+  .row {
+    margin-top: 80px;
+    [class*='col-'] {
+      margin-top: 40px;
+    }
+  }
+  &__item {
+    padding: 14px;
+    color: inherit;
+    display: block;
+    text-align: center;
+    border-radius: $radius-20;
+    min-height: 178px;height: 100%;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
+    * {
+      display: block;
+    }
+    &:hover {
+      box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.15);
+    }
+  }
+  &__img {
+    margin: 0 auto;
+    @include bl-size(80px, 80px);
+  }
+  &__country {
+    margin-top: 8px;
+  }
+  &__num {
+    margin-top: 7px;
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .free-numbers {
+    &__item {
+      min-height: 140px;
+    }
+    &__img {
+      @include bl-size(50px, 50px);
+    }
+  }
+}

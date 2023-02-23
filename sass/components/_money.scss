@@ -1,0 +1,92 @@
+// Money
+.money {
+  &__way {
+    margin-top: 10px;
+  }
+  &__group {
+    margin-top: 50px;
+    input {
+      display: none;
+    }
+    input:checked + .money__mark:before {
+      opacity: 1;
+    }
+  }
+  &__item {
+    cursor: pointer;
+    font-size: $fz-13;
+    &:not(:last-child) {
+      margin-right: 45px;
+    }
+  }
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    @include bl-size(128px, 128px);
+  }
+  &__name {
+    min-height: 36px;
+    margin-top: 20px;
+    font-weight: $regular;
+  }
+  &__mark {
+    display: block;
+    background: $dark;
+    position: relative;
+    border-radius: 50%;
+    margin: 10px auto 0;
+    @include bl-size(22px, 22px);
+    &:before {
+      opacity: 0;
+      @include pseudo-elements;
+      background: $white;
+      border-radius: inherit;
+      top: 4px;left: 4px;right: 4px;bottom: 4px;
+      transition: all .2s;
+    }
+  }
+  &__sum {
+    margin-top: 55px;
+  }
+  &__form {
+    margin: 0 auto;
+    max-width: 380px;width: 100%;
+    .form__field {
+      margin-bottom: 0;
+      position: relative;
+      input {
+        height: 65px;
+        border-radius: $radius-10;
+      }
+      .form__name {
+        width: auto;
+        font-size: $fz-13;
+        padding-right: 0;
+        text-align: center;
+        position: absolute;
+        font-weight: $regular;
+        top: -25px;left: 0;right: 0;
+      }
+    }
+    .btn {
+      width: auto;
+      margin-left: 15px;
+    }
+  }
+  &__txt {
+    font-size: $fz-13;
+    margin: 20px auto 0;
+    max-width: 220px;width: 100%;
+  }
+}
+
+// Media
+@media only screen and (max-width: $xl) {
+  .money {
+    &__form {
+      .form__field input {
+        height: 60px;
+      }
+    }
+  }
+}
