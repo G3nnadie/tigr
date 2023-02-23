@@ -54,12 +54,47 @@
   &__head {
     color: $white;
     background: $dark;
-    padding: 29px 22px;
+    position: relative;
     word-break: break-all;
     border-radius: $radius-20;
+    padding: 29px 50px 29px 22px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.02), 0px 2px 4px rgba(0, 0, 0, 0.08);
     span {
       color: $red;
+    }
+  }
+  &__copy {
+    position: absolute;
+    right: 15px;bottom: 7px;
+    i {
+      display: block;
+      cursor: pointer;
+      @include bl-size(24px, 23px);
+      background: url(../img/svg/i-copy.svg) center/contain no-repeat;
+      filter: brightness(0) invert(1);
+      transition: all .2s;
+      &:hover {
+        opacity: .7;
+      }
+    }
+    &Info {
+      opacity: 0;
+      background: $red;
+      padding: 4px 8px;
+      font-size: $fz-10;
+      border-radius: 5px;
+      position: absolute;
+      white-space: nowrap;
+      pointer-events: none;
+      top: calc(100% + 15px);right: 0;
+      &:before {
+        @include bl-size(0, 0);
+        @include pseudo-elements;
+        bottom: 100%;right: 7px;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-bottom: 4px solid $red;
+      }
     }
   }
   &__body {
