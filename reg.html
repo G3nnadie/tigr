@@ -100,7 +100,11 @@
               </div>
             </div>
             <form action="#" class="form form-page__form">
-              <label class="form__field"><input type="text" placeholder="Логин"></label>
+              <label class="form__field form__field--error">
+                <input type="text" placeholder="Логин">
+                <span class="form__error">*</span>
+                <span class="form__errorText">Не удалось найти пользователя с указанным электронным адресом.</span>
+              </label>
               <label class="form__field"><input type="text" placeholder="Email адрес"></label>
               <label class="form__field"><input type="password" placeholder="Пароль"></label>
               <label class="form__field"><input type="password" placeholder="Подтвердить пароль"></label>
